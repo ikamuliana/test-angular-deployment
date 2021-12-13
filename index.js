@@ -10,7 +10,7 @@ const express = require('express');
 const app = express();
 
 // Penerapan middleware
-// app.use(requiredHTTPS);
+app.use(requireHTTPS);
 app.use(express.static('./dist/test-angular-deployment'))
 
 app.get('/*', (req, res) => {
